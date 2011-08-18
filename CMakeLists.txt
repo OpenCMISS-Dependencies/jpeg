@@ -181,12 +181,7 @@ ELSE( WIN32 )
 ENDIF( WIN32 )
 
 IF( ${CMAKE_SYSTEM_NAME} STREQUAL "Linux" AND ${CMAKE_SYSTEM_PROCESSOR} STREQUAL "x86_64" )
-	SET_SOURCE_FILES_PROPERTIES( jcmainct.c jcmarker.c jcmaster.c jcparam.c jcprepct.c
-		jcsample.c jdapimin.c jdinput.c jdlossls.c jdlossy.c jdmarker.c jdmaster.c
-		jdmerge.c jdphuff.c jdpostct.c jdpred.c jdsample.c jdscale.c jdshuff.c
-		jerror.c jquant1.c jquant2.c jmemmgr.c jccolor.c jclossls.c jclossy.c
-		jcphuff.c jcpred.c jcscale.c jcshuff.c jdcoefct.c jdcolor.c jddctmgr.c
-		jddiffct.c jdlhuff.c jdmainct.c jccoefct.c jcdctmgr.c jcdiffct.c jclhuff.c
+	SET_SOURCE_FILES_PROPERTIES( ${LIBRARY_SRCS} ${SYSTEM_DEPENDENT_SRCS}
 		PROPERTIES COMPILE_FLAGS "-fPIC" )
 ENDIF( ${CMAKE_SYSTEM_NAME} STREQUAL "Linux" AND ${CMAKE_SYSTEM_PROCESSOR} STREQUAL "x86_64" )
 
