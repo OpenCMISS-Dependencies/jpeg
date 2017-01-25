@@ -39,6 +39,10 @@
 #include <stdlib.h>
 #endif
 
+#ifdef HAVE_BASETSD_H
+#include <basetsd.h>
+#endif
+
 #ifdef NEED_SYS_TYPES_H
 #include <sys/types.h>
 #endif

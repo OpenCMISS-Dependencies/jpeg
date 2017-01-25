@@ -21,6 +21,8 @@ typedef unsigned char boolean;
 #endif
 #define HAVE_BOOLEAN		/* prevent jmorecfg.h from redefining it */
 
+#define HAVE_BASETSD_H
+#define XMD_H /* Not true but the definitions are already supplied */
 
 #ifdef JPEG_INTERNALS
 
