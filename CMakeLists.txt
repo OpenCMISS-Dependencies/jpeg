@@ -70,7 +70,7 @@ set(CMAKE_INSTALL_PREFIX ${${UPPERCASE_LIBRARY_TARGET_NAME}_INSTALL_PREFIX}
     CACHE INTERNAL "Internalise this variable and manipulate with
     ${UPPERCASE_LIBRARY_TARGET_NAME}_INSTALL_PREFIX" FORCE )
 
-set(_CONFIG_DIR "${LIBRARY_TARGET_NAME}/cmake")
+set(_CONFIG_DIR "cmake")
 if(UNIX)
     set(_CONFIG_DIR "share/${_CONFIG_DIR}")
 endif()
